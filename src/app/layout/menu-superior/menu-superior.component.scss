@@ -1,0 +1,15 @@
+.menu-container {
+    display: inline-flex;
+    width: 60%;
+    margin: 0 auto;
+
+    .menu-item {
+        display: inline;
+        flex-grow: 1;
+        flex-basis: 0;
+
+        :first-child {
+            color: #9c1f49;
+        }
+    }
+}
