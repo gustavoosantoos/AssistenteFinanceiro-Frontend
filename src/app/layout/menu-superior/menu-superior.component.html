@@ -2,8 +2,10 @@
   <div class="menu-container">
 
     <mat-menu #menuGestao>
-      <button mat-menu-item>Settings</button>
-      <button mat-menu-item>Help</button>
+      <button mat-menu-item>Dashboard</button>
+      <button mat-menu-item>Transações</button>
+      <button mat-menu-item>Receitas</button>
+      <button mat-menu-item>Despesas</button>
     </mat-menu>
     <button mat-menu-item [matMenuTriggerFor]="menuGestao">
       <mat-icon>attach_money</mat-icon>
@@ -12,6 +14,9 @@
     </button>
 
     <mat-menu #menuRelatorios>
+      <button mat-menu-item>Balanço mensal</button>
+      <button mat-menu-item>Balanço anual</button>
+      <button mat-menu-item>Balanço geral</button>
     </mat-menu>
     <button mat-menu-item [matMenuTriggerFor]="menuRelatorios">
       <mat-icon>pie_chart</mat-icon>
@@ -42,31 +47,5 @@
       <span>Cadastros</span>
       <mat-icon>more_vert</mat-icon>
     </button>
-
-    <!-- <div class="menu-item">
-      <i class="material-icons">attach_money</i>
-      <a>Gestão</a>
-      <i class="material-icons">expand_more</i>
-    </div> -->
-    <!-- <div class="menu-item">
-      <i class="material-icons">pie_chart</i>
-      <a>Relatórios</a>
-      <i class="material-icons">expand_more</i>
-    </div> -->
-    <!-- <div class="menu-item">
-      <i class="material-icons">flag</i>
-      <a>Objetivos</a>
-      <i class="material-icons">expand_more</i>
-    </div>
-    <div class="menu-item">
-      <i class="material-icons">show_chart</i>
-      <a>Ações</a>
-      <i class="material-icons">expand_more</i>
-    </div>
-    <div class="menu-item">
-      <i class="material-icons">save</i>
-      <a>Cadastros</a>
-      <i class="material-icons">expand_more</i>
-    </div> -->
   </div>
 </mat-toolbar>
