@@ -4,7 +4,7 @@
     <mat-menu #menuGestao>
       <button mat-menu-item>Dashboard</button>
       <button mat-menu-item>Transações</button>
-      <button mat-menu-item>Receitas</button>
+      <button mat-menu-item [routerLink]="['/gestao/receitas']">Receitas</button>
       <button mat-menu-item>Despesas</button>
     </mat-menu>
     <button mat-menu-item [matMenuTriggerFor]="menuGestao">

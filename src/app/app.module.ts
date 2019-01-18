@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { MenuSuperiorComponent } from './layout/menu-superior/menu-superior.component';
 import { PageFooterComponent } from './layout/page-footer/page-footer.component';
 import { PageHeaderComponent } from './layout/page-header/page-header.component';
+import { ReceitasComponent } from './gestao/receitas/receitas.component';
 
 
 
@@ -18,7 +19,8 @@ import { PageHeaderComponent } from './layout/page-header/page-header.component'
     AppComponent,
     PageHeaderComponent,
     PageFooterComponent,
-    MenuSuperiorComponent
+    MenuSuperiorComponent,
+    ReceitasComponent
   ],
   imports: [
     BrowserModule,
