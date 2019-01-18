@@ -3,13 +3,15 @@
     width: 60%;
     margin: 0 auto;
 
-    .menu-item {
-        display: inline;
-        flex-grow: 1;
-        flex-basis: 0;
-
+    button {
         :first-child {
             color: #9c1f49;
+        }
+
+        span {
+            font-size: 12pt;
+            font-weight: 500;
+            margin: auto 15px auto 0px;
         }
     }
 }
