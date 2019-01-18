@@ -1,0 +1,24 @@
+$rhitta-footer-bgcolor: #767474;
+$rhitta-footer-fontcolor: white;
+
+.page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $rhitta-footer-bgcolor;
+    color: $rhitta-footer-fontcolor;
+    min-height: 50px;
+
+    .page-footer-content {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+
+        .page-footer-text {
+            text-align: center;
+            position: relative;
+            top: 31%;
+        }
+    }
+}
