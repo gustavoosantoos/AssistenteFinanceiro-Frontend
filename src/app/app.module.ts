@@ -14,7 +14,7 @@ import { ReceitasComponent } from './gestao/receitas/receitas.component';
 import { DashboardComponent } from './gestao/dashboard/dashboard.component';
 import { DespesasComponent } from './gestao/despesas/despesas.component';
 import { TransacoesComponent } from './gestao/transacoes/transacoes.component';
-
+import { ListagemContasComponent } from './gestao/contas/listagem-contas/listagem-contas.component';
 
 
 @NgModule({
@@ -26,7 +26,8 @@ import { TransacoesComponent } from './gestao/transacoes/transacoes.component';
     ReceitasComponent,
     DashboardComponent,
     DespesasComponent,
-    TransacoesComponent
+    TransacoesComponent,
+    ListagemContasComponent
   ],
   imports: [
     BrowserModule,
