@@ -11,6 +11,9 @@ import { MenuSuperiorComponent } from './layout/menu-superior/menu-superior.comp
 import { PageFooterComponent } from './layout/page-footer/page-footer.component';
 import { PageHeaderComponent } from './layout/page-header/page-header.component';
 import { ReceitasComponent } from './gestao/receitas/receitas.component';
+import { DashboardComponent } from './gestao/dashboard/dashboard.component';
+import { DespesasComponent } from './gestao/despesas/despesas.component';
+import { TransacoesComponent } from './gestao/transacoes/transacoes.component';
 
 
 
@@ -20,7 +23,10 @@ import { ReceitasComponent } from './gestao/receitas/receitas.component';
     PageHeaderComponent,
     PageFooterComponent,
     MenuSuperiorComponent,
-    ReceitasComponent
+    ReceitasComponent,
+    DashboardComponent,
+    DespesasComponent,
+    TransacoesComponent
   ],
   imports: [
     BrowserModule,
