@@ -2,3 +2,17 @@
   font-size: 14pt;
   font-weight: 500;
 }
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.user-name {
+  font-size: 12pt;
+}
+
+mat-toolbar {
+  mat-icon {
+    vertical-align: middle;
+  }
+}

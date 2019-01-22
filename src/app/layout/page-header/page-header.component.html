@@ -1,5 +1,15 @@
 <mat-toolbar color="primary">
-  <button mat-menu-item [routerLink]="['/gestao']">
+  <a mat-menu-item [routerLink]="['/gestao']">
     <span class="page-header">Rhitta - Assistente Financeiro</span>
-  </button>
+  </a>
+  <span class="spacer"></span>
+
+  <span class="user-name">Gustavo dos Santos Oliveira</span>
+  <a mat-icon-button [matMenuTriggerFor]="menuUsuario">
+    <mat-icon>menu</mat-icon>
+  </a>
+  <mat-menu #menuUsuario>
+      <button mat-menu-item [routerLink]="['/gestao']">Dados Cadastrais</button>
+      <button mat-menu-item [routerLink]="['/gestao']">Sair</button>
+  </mat-menu>
 </mat-toolbar>
