@@ -17,6 +17,7 @@ import { TransacoesComponent } from './gestao/transacoes/transacoes.component';
 import { MenuSuperiorComponent } from './layout/menu-superior/menu-superior.component';
 import { PageFooterComponent } from './layout/page-footer/page-footer.component';
 import { PageHeaderComponent } from './layout/page-header/page-header.component';
+import { PageTitleComponent } from './layout/page-title/page-title.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { PageHeaderComponent } from './layout/page-header/page-header.component'
     DashboardComponent,
     DespesasComponent,
     TransacoesComponent,
-    ListagemContasComponent
+    ListagemContasComponent,
+    PageTitleComponent
   ],
   imports: [
     BrowserModule,

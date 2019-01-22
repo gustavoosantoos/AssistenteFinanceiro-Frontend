@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listagem-contas.component.scss']
 })
 export class ListagemContasComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
