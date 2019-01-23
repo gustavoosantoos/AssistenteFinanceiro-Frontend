@@ -7,11 +7,12 @@ import { ReceitasComponent } from './gestao/receitas/receitas.component';
 import { TransacoesComponent } from './gestao/transacoes/transacoes.component';
 
 const routes: Routes = [
+  { path: '', component: DashboardComponent },
   { path: 'gestao', component: DashboardComponent },
-  { path: 'gestao/contas', component: ListagemContasComponent},
-  { path: 'gestao/transacoes', component: TransacoesComponent},
+  { path: 'gestao/contas', component: ListagemContasComponent },
+  { path: 'gestao/transacoes', component: TransacoesComponent },
   { path: 'gestao/receitas', component: ReceitasComponent },
-  { path: 'gestao/despesas', component: DespesasComponent}
+  { path: 'gestao/despesas', component: DespesasComponent }
 ];
 
 @NgModule({
