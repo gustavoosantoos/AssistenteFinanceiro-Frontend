@@ -25,6 +25,24 @@
     .conta-content {
       width: 50%;
       display: inline-block;
+      margin-bottom: 20px;
+      font-size: 11pt;
+      
+      .content-title {
+        &__negative {
+          font-weight: 500;
+          color: rgb(250, 35, 35);  
+        }
+
+        &__positive {
+          font-weight: 500;
+          color: rgb(23, 143, 23);
+        }
+      }
+      
+      .content-value {
+      }
+
       span {
         display: block;
       }
