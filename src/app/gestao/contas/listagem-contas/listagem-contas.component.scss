@@ -4,11 +4,13 @@
   right: 25px;
 }
 
-.conta-icon {
-    font-size: 40px;
-    background-color: #767474;
+.conta-icon-container {
+  .conta-icon {
+    font-size: 30px;
     border-radius: 50%;
-    padding-left: 1px;
+    padding-left: 5px;
+    padding-top: 4px;
+  }
 }
 
 .conta-container {
