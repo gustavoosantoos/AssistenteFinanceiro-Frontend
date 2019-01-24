@@ -5,11 +5,15 @@
 }
 
 .conta-icon-container {
+  display: flex;
+
   .conta-icon {
     font-size: 30px;
     border-radius: 50%;
-    padding-left: 5px;
-    padding-top: 4px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    align-self: center;
   }
 }
 
