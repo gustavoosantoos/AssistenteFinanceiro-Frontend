@@ -19,4 +19,15 @@
 
 .conta-container {
   padding: 0 10px;
+  width: 100%;
+
+  .conta-content-container {
+    .conta-content {
+      width: 50%;
+      display: inline-block;
+      span {
+        display: block;
+      }
+    }
+  }
 }
