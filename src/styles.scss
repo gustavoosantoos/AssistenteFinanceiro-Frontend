@@ -2,7 +2,13 @@
 @import '~@angular/material/theming';
 @import 'assets/styles/theme/rhitta-theme.scss';
 
-@include mat-core();
+$custom-typography: mat-typography-config(
+  $font-family: 'Noto Sans, sans-serif',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+
+@include mat-core($custom-typography);
 
 $AssistenteFinanceiro-Frontend-primary: mat-palette($rhitta-mat-purple, 800);
 $AssistenteFinanceiro-Frontend-accent: mat-palette($mat-grey, A200, A100, A400);
@@ -24,7 +30,6 @@ app-root,
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .mat-toolbar {
