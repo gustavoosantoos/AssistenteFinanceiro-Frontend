@@ -27,6 +27,8 @@ html {
   transition: width $action-transition-duration $action-transition-timing-function, margin $action-transition-duration $action-transition-timing-function;
   width: calc(100% - #{$sidebar-width-lg});
   min-height: calc(100vh - #{$navbar-height});
+  margin-left: $sidebar-width-lg;
+
   @include display-flex();
   @include flex-direction(column);
   @media (max-width: 991px) {

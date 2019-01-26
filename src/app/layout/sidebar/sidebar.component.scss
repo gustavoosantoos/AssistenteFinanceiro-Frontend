@@ -2,7 +2,11 @@
 
 @import '../../../styles';
 .sidebar {
-  min-height: calc(100vh - #{$navbar-height});
+  position: fixed;
+  max-height: calc(100vh - #{$navbar-height});
+  top: $navbar-height;
+  bottom: 0;
+  overflow: auto;
   background: $sidebar-light-bg;
   font-family: $type-2;
   padding: 0;
