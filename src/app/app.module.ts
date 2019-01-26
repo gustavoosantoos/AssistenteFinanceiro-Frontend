@@ -7,10 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [

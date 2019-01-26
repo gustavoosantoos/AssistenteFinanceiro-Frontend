@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/fabul/Desktop/star-admin-angular/src/styles.scss */"./src/styles.scss");
+module.exports = __webpack_require__(/*! Z:\Projetos\Angular\AssistenteFinanceiro-Frontend\src\styles.scss */"./src/styles.scss");
 
 
 /***/ })
