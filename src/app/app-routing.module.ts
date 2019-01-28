@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { ListagemContasComponent } from './contas/listagem-contas/listagem-contas.component';
-import { ListagemTransacoesComponent } from './transacoes/listagem-transacoes/listagem-transacoes.component';
-import { ListagemObjetivosComponent } from './objetivos/listagem-objetivos/listagem-objetivos.component';
-import { ListagemCadastrosComponent } from './cadastros/listagem-cadastros/listagem-cadastros.component';
 import { ListagemAcoesComponent } from './acoes/listagem-acoes/listagem-acoes.component';
+import { ListagemCadastrosComponent } from './cadastros/listagem-cadastros/listagem-cadastros.component';
+import { ListagemContasComponent } from './contas/components/listagem-contas/listagem-contas.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ListagemObjetivosComponent } from './objetivos/listagem-objetivos/listagem-objetivos.component';
+import { ListagemTransacoesComponent } from './transacoes/listagem-transacoes/listagem-transacoes.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
