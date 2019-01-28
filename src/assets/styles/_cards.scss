@@ -9,6 +9,14 @@
       padding-top: 0;
     }
   }
+
+  .card-header {
+    span {
+      display: inline-block;
+      margin-left: 15px;
+    }
+  }
+
   &.card-outline-success{
 		border: 1px solid theme-color("success");
 	}
