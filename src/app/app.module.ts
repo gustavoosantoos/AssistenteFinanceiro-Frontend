@@ -11,6 +11,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { ListagemContasComponent } from './contas/listagem-contas/listagem-contas.component';
+import { ListagemTransacoesComponent } from './transacoes/listagem-transacoes/listagem-transacoes.component';
+import { ListagemObjetivosComponent } from './objetivos/listagem-objetivos/listagem-objetivos.component';
+import { ListagemCadastrosComponent } from './cadastros/listagem-cadastros/listagem-cadastros.component';
+import { ListagemAcoesComponent } from './acoes/listagem-acoes/listagem-acoes.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { FooterComponent } from './layout/footer/footer.component';
     NavbarComponent,
     SidebarComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    ListagemContasComponent,
+    ListagemTransacoesComponent,
+    ListagemObjetivosComponent,
+    ListagemCadastrosComponent,
+    ListagemAcoesComponent
   ],
   imports: [
     BrowserModule,

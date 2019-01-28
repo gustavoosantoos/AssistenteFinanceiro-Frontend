@@ -84,9 +84,11 @@
         }
         &:hover {
           color: darken($sidebar-light-menu-color, 5%);
+          background-clip: $sidebar-light-menu-hover-bg;
         }
         &.active {
           color: $sidebar-light-menu-active-color;
+          background-color: $sidebar-light-menu-hover-bg;
           .menu-title,
           i {
             color: inherit;
@@ -132,7 +134,7 @@
         &:hover {
           &:not(.nav-profile) {
             >.nav-link {
-              background: $sidebar-light-menu-hover-bg;
+              background-color: $sidebar-light-menu-hover-bg;
               color: $primary;
             }
           }
