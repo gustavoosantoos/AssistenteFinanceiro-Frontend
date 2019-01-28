@@ -1,16 +1,20 @@
 <app-page-header [title]="'Contas'" [icon]="'mdi-cash-multiple'"></app-page-header>
 
 <div class="row">
-  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-margin stretch-card">
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-margin stretch-card" *ngFor="let conta of contas">
     <div class="card card-statistics">
       <div class="card-header">
         <div class="header-left">
           <i class="mdi mdi-poll-box text-success icon-md"></i>
-          <span class="h4 text-center">Conta Corrente</span>
+          <span class="h4 text-center">{{conta.nome}}</span>
         </div>
         <div class="header-right">
-          <button class="btn social-btn btn-outline-secondary" type="button"><i class="mdi mdi-dots-horizontal"></i></button>&nbsp;
-          <button class="btn social-btn btn-outline-danger" type="button"><i class="mdi mdi-delete"></i></button>
+          <button class="btn social-btn btn-outline-secondary" type="button">
+            <i class="mdi mdi-dots-horizontal"></i>
+          </button>&nbsp;
+          <button class="btn social-btn btn-outline-danger" type="button">
+            <i class="mdi mdi-delete"></i>
+          </button>
         </div>
       </div>
       <div class="card-body">
@@ -18,66 +22,26 @@
           <div class="col-md-6 col-sm-6 col-xs-6">
             <p class="mb-0">Saldo Atual</p>
             <div class="fluid-container">
-              <h3 class="font-weight-medium text-success mb-0">R$ 130.00</h3>
+              <h3 class="font-weight-medium text-success mb-0" [ngClass]="(conta.saldoAtual > 0) ? 'text-success' : 'text-danger'">
+                {{conta.saldoAtual | currency: 'BRL'}}
+              </h3>
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
             <p class="mb-0 text-muted">Saldo Previsto</p>
             <div class="fluid-container">
-              <h3 class="font-weight-medium text-muted mb-0">R$ 30.00</h3>
+              <h3 class="font-weight-medium text-muted mb-0 ">{{conta.saldoPrevisto | currency: 'BRL'}}</h3>
             </div>
           </div>
         </div>
         <div class="row text-center">
           <div class="col-md-6 col-sm-6 col-xs-12">
             <p class="mb-0">Transações Realizadas</p>
-            <p class="mb-0 text-success">12</p>
+            <p class="mb-0 text-success">{{conta.transacoesRealizadas}}</p>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
             <p class="mb-0">Transações Pendentes</p>
-            <p class="mb-0 text-danger">3</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-margin stretch-card">
-    <div class="card card-statistics">
-      <div class="card-header">
-        <div class="header-left">
-          <i class="mdi mdi-cash-multiple text-danger icon-md"></i>
-          <span class="h4 text-center">Dinheiro</span>
-        </div>
-        <div class="header-right">
-          <button class="btn social-btn btn-outline-secondary" type="button"><i class="mdi mdi-dots-horizontal"></i></button>&nbsp;
-          <button class="btn social-btn btn-outline-danger" type="button"><i class="mdi mdi-delete"></i></button>
-        </div>
-      </div>
-      <div class="card-body">
-        <div class="row text-center">
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <p class="mb-0">Saldo Atual</p>
-            <div class="fluid-container">
-              <h3 class="font-weight-medium text-danger mb-0">R$ -250.00</h3>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <p class="mb-0 text-muted">Saldo Previsto</p>
-            <div class="fluid-container">
-              <h3 class="font-weight-medium text-muted mb-0">R$ 30.00</h3>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <p class="mb-0">Transações Realizadas</p>
-            <p class="mb-0 text-success">12</p>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <p class="mb-0">Transações Pendentes</p>
-            <p class="mb-0 text-danger">3</p>
+            <p class="mb-0 text-danger">{{conta.transacoesPendentes}}</p>
           </div>
         </div>
       </div>
