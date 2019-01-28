@@ -105,6 +105,14 @@
   border: $border-width solid $border-color;
   @include border-radius($btn-border-radius);
 
+  &.special {
+    display: flex;
+
+    .btn {
+      flex: 1;
+    }
+  }
+
   .btn {
     border-top: none;
     border-bottom: none;

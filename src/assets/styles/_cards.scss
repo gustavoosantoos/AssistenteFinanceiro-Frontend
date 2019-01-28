@@ -1,20 +1,28 @@
 /* Cards */
 
 .card {
-  border: 0;
+  border: 1px solid #e0dddd;
   @include border-radius(2px);
+  
+  
   .card-body {
     padding: $card-padding-y $card-padding-x;
-    + .card-body {
+    .card-body {
       padding-top: 0;
     }
   }
 
   .card-header {
+    padding: 0.6rem 1.25rem;
+
     span {
       display: inline-block;
       margin-left: 15px;
     }
+  }
+
+  .card-footer {
+
   }
 
   &.card-outline-success{
