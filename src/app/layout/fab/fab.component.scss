@@ -1,0 +1,25 @@
+@import '../../../styles';
+
+.fab-container {
+    width: 60px;
+    height: 60px;
+    background-color: $primary;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0 #666;
+    transition: all 0.1s ease-in-out;
+  
+    font-size: 34px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+  
+    position: fixed;
+    right: 50px;
+    bottom: 50px; 
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 8px 18px 0 #666;
+    }
+}
+

@@ -17,6 +17,7 @@ import { ListagemObjetivosComponent } from './objetivos/listagem-objetivos/lista
 import { ListagemCadastrosComponent } from './cadastros/listagem-cadastros/listagem-cadastros.component';
 import { ListagemAcoesComponent } from './acoes/listagem-acoes/listagem-acoes.component';
 import { PageHeaderComponent } from './layout/page-header/page-header.component';
+import { FabComponent } from './layout/fab/fab.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PageHeaderComponent } from './layout/page-header/page-header.component'
     ListagemObjetivosComponent,
     ListagemCadastrosComponent,
     ListagemAcoesComponent,
-    PageHeaderComponent
+    PageHeaderComponent,
+    FabComponent
   ],
   imports: [
     BrowserModule,
