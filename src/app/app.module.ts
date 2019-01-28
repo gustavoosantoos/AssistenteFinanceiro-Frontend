@@ -16,6 +16,7 @@ import { ListagemTransacoesComponent } from './transacoes/listagem-transacoes/li
 import { ListagemObjetivosComponent } from './objetivos/listagem-objetivos/listagem-objetivos.component';
 import { ListagemCadastrosComponent } from './cadastros/listagem-cadastros/listagem-cadastros.component';
 import { ListagemAcoesComponent } from './acoes/listagem-acoes/listagem-acoes.component';
+import { PageHeaderComponent } from './layout/page-header/page-header.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ListagemAcoesComponent } from './acoes/listagem-acoes/listagem-acoes.co
     ListagemTransacoesComponent,
     ListagemObjetivosComponent,
     ListagemCadastrosComponent,
-    ListagemAcoesComponent
+    ListagemAcoesComponent,
+    PageHeaderComponent
   ],
   imports: [
     BrowserModule,
