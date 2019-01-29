@@ -4,17 +4,19 @@
   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 grid-margin stretch-card" *ngFor="let conta of contas">
     <div class="card card-statistics">
       <div class="card-header">
-        <div class="header-left">
-          <i class="mdi mdi-poll-box text-success icon-md"></i>
-          <span class="h4 text-center">{{conta.nome}}</span>
-        </div>
-        <div class="header-right">
-          <button class="btn social-btn btn-outline-secondary" type="button">
-            <i class="mdi mdi-dots-horizontal"></i>
-          </button>&nbsp;
-          <button class="btn social-btn btn-outline-danger" type="button">
-            <i class="mdi mdi-delete"></i>
-          </button>
+        <div class="row">
+          <div class="col-xs-6 header-left">
+            <i class="mdi mdi-poll-box text-success icon-md"></i>
+            <div class="conta-name text-center">{{conta.nome}}</div>
+          </div>
+          <div class="col-xs-6 header-right">
+            <button class="btn social-btn btn-outline-secondary" type="button">
+              <i class="mdi mdi-dots-horizontal"></i>
+            </button>&nbsp;
+            <button class="btn social-btn btn-outline-danger" type="button">
+              <i class="mdi mdi-delete"></i>
+            </button>
+          </div>
         </div>
       </div>
       <div class="card-body">

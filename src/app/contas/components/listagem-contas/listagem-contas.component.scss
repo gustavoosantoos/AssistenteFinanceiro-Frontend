@@ -1,12 +1,15 @@
-.header-left {
-    float: left;
-    height: 3rem;
+.conta-name {
+    font-size: 1.2rem;
+    display: inline-block;
+    height: 100%;
+    vertical-align: -webkit-baseline-middle;
+    margin-left: 10px;
+}
 
-    span {
-        line-height: initial;
-    }
+.header-left {
+    padding-left: 15px;
 }
 
 .header-right {
-    float: right;
+    margin-left: auto;
 }
