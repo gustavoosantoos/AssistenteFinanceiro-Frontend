@@ -1,5 +1,10 @@
 .header-left {
     float: left;
+    height: 3rem;
+
+    span {
+        line-height: initial;
+    }
 }
 
 .header-right {
