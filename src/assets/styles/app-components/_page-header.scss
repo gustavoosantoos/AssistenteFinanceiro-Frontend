@@ -1,0 +1,23 @@
+.page-header-container {
+  margin: -1.7rem -2.5rem;
+  margin-bottom: 1rem;
+
+  .card .card-body {
+    padding: 0.4rem 2rem;
+  }
+
+  .page-header {
+    border: 0;
+  }
+
+  .page-title {
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+    h2 {
+      font-size: 1.5rem;
+      display: inline-block;
+      margin-left: 15px;
+    }
+  }
+}

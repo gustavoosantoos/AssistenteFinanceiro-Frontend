@@ -49,4 +49,10 @@
 @import "./assets/styles/misc";
 @import "./assets/styles/utilities";
 @import "./assets/styles/demo";
-/* You can add global styles to this file, and also import other style files */
+
+@import "./assets/styles/app-components/app-component";
+@import "./assets/styles/app-components/fab";
+@import "./assets/styles/app-components/footer";
+@import "./assets/styles/app-components/navbar";
+@import "./assets/styles/app-components/page-header";
+@import "./assets/styles/app-components/sidebar";
