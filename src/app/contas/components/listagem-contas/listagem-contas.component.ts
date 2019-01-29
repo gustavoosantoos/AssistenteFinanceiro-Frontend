@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Conta } from '../../models/conta.model';
 
 @Component({
@@ -13,9 +14,14 @@ export class ListagemContasComponent implements OnInit {
     new Conta(1200, 1502, 15, 1, 'Dinheiro na Carteira')
   ];
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
 
+  criarConta() {
+    this.router.navigate(['contas/nova']);
+  }
 }

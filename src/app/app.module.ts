@@ -7,6 +7,7 @@ import { ListagemAcoesComponent } from './acoes/listagem-acoes/listagem-acoes.co
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListagemCadastrosComponent } from './cadastros/listagem-cadastros/listagem-cadastros.component';
+import { FormContasComponent } from './contas/components/form-contas/form-contas.component';
 import { ListagemContasComponent } from './contas/components/listagem-contas/listagem-contas.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FabComponent } from './layout/fab/fab.component';
@@ -32,7 +33,8 @@ import { ListagemTransacoesComponent } from './transacoes/listagem-transacoes/li
     ListagemCadastrosComponent,
     ListagemAcoesComponent,
     PageHeaderComponent,
-    FabComponent
+    FabComponent,
+    FormContasComponent
   ],
   imports: [
     BrowserModule,

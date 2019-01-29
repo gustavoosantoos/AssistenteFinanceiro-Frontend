@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-fab',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FabComponent implements OnInit {
 
+  @Output() fabClicked: EventEmitter<any> = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  fabClick() {
+    this.fabClicked.emit();
+  }
 }
