@@ -1,1 +1,41 @@
 <app-page-header [title]="'Nova Conta'" [icon]="'mdi-plus'"></app-page-header>
+
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Cadastrar nova conta</h4>
+        <div class="row">
+          <div class="col-xl-3 col-sm-6">
+            <div class="form-group">
+              <label for="nomeConta">Nome da conta</label>
+              <input type="text" class="form-control" id="nomeConta">
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6">
+            <div class="form-group">
+              <label for="saldoInicial">Saldo inicial</label>
+              <input type="text" class="form-control" id="saldoInicial">
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6">
+            <div class="form-group">
+              <label for="nomeIcone">Icone da conta</label>
+              <input type="text" class="form-control" id="nomeIcone">
+            </div>
+          </div>
+          <div class="col-xl-3 col-sm-6">
+            <div class="form-group">
+              <label for="corIcone">Cor do icone</label>
+              <input type="color" class="form-control" id="corIcone">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-right">
+        <button class="btn btn-light mr-3">Cancelar</button>
+        <button class="btn btn-primary">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+</div>
