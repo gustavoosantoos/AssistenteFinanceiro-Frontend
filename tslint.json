@@ -15,7 +15,6 @@
       "severity": "warn"
     },
     "eofline": true,
-    "forin": true,
     "import-blacklist": [
       true,
       "rxjs/Rx"
@@ -83,7 +82,7 @@
       "check-else",
       "check-whitespace"
     ],
-    "prefer-const": true,
+    "prefer-const": false,
     "quotemark": [
       true,
       "single"

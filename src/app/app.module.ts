@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -41,9 +41,12 @@ import { ListagemTransacoesComponent } from './transacoes/listagem-transacoes/li
     RouterModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    FormBuilder
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
