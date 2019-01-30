@@ -132,7 +132,7 @@
           &:not(.nav-profile) {
             >.nav-link {
               background-color: $sidebar-light-menu-hover-bg;
-              color: $primary;
+              color: theme-color('primary');
             }
           }
         }
