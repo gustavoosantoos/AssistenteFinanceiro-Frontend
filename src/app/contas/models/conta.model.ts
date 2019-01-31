@@ -1,7 +1,7 @@
 export class Conta {
     public nome: string;
     public descricao: string;
-    public saldoAtual: number;
+    public saldo: number;
     public saldoPrevisto: number;
     public transacoesRealizadas: number;
     public transacoesPendentes: number;
@@ -10,7 +10,7 @@ export class Conta {
 
     constructor(
         nome?: string,
-        saldoInicial?: number,
+        saldo?: number,
         saldoPrevisto?: number,
         transacoesRealizadas?: number,
         transacoesPendentes?: number,
@@ -20,7 +20,7 @@ export class Conta {
 
         this.nome = nome;
         this.descricao = descricao;
-        this.saldoAtual = saldoInicial || 0;
+        this.saldo = saldo || 0;
         this.saldoPrevisto = saldoPrevisto || 0;
         this.transacoesRealizadas = transacoesRealizadas || 0;
         this.transacoesPendentes = transacoesPendentes || 0;

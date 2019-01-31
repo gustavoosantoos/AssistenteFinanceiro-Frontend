@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { CadastrarConta } from '../models/cadastrar-conta.model';
 import { Conta } from '../models/conta.model';
 
 @Injectable({
@@ -19,7 +20,7 @@ export class ContasService {
     return this.http.get<Array<Conta>>(this.serviceUrl);
   }
 
-  public cadastrarConta(conta: Conta): Observable<any> {
+  public cadastrarConta(conta: CadastrarConta): Observable<any> {
     return this.http.post(this.serviceUrl, conta);
   }
 }

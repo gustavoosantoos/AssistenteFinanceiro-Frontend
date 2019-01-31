@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Conta } from '../../models/conta.model';
+import { CadastrarConta } from '../../models/cadastrar-conta.model';
 import { ContasService } from '../../services/contas.service';
 
 @Component({
@@ -42,7 +42,7 @@ export class FormContasComponent implements OnInit {
     }
 
     let { nomeConta, saldoInicial, nomeIcone, corIcone } = this.registerForm.value;
-    let conta = new Conta(nomeConta, saldoInicial, 0, 0, 0, null, nomeIcone, corIcone);
+    let conta = new CadastrarConta(nomeConta, null, nomeIcone, corIcone, saldoInicial);
 
     this.service.cadastrarConta(conta).subscribe(() => {
       this.router.navigate(['/contas']);
