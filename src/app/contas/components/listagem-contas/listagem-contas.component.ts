@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Conta } from '../../models/conta.model';
+import { ContasService } from '../../services/contas.service';
 
 @Component({
   selector: 'app-listagem-contas',
@@ -9,16 +10,17 @@ import { Conta } from '../../models/conta.model';
 })
 export class ListagemContasComponent implements OnInit {
 
-  contas: Array<Conta> = [
-    new Conta(-120, -200, 12, 2, 'Conta Corrente'),
-    new Conta(1200, 1502, 15, 1, 'Dinheiro na Carteira')
-  ];
+  contas: Array<Conta> = [];
 
   constructor(
-    private router: Router
+    private router: Router,
+    private service: ContasService
   ) { }
 
   ngOnInit() {
+    this.service.obterContas().subscribe(r => {
+      this.contas = r;
+    });
   }
 
   criarConta() {

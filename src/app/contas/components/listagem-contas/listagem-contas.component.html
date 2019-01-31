@@ -6,7 +6,7 @@
       <div class="card-header">
         <div class="row">
           <div class="col-xs-6 header-left">
-            <i class="mdi mdi-poll-box text-success icon-md"></i>
+            <i class="{{conta.icone}} icon-md" [style.color]="conta.cor"></i>
             <div class="conta-name text-center">{{conta.nome}}</div>
           </div>
           <div class="col-xs-6 header-right">
@@ -24,8 +24,8 @@
           <div class="col-md-6 col-sm-6 col-xs-6">
             <p class="mb-0">Saldo Atual</p>
             <div class="fluid-container">
-              <h3 class="font-weight-medium text-success mb-0" [ngClass]="(conta.saldoAtual > 0) ? 'text-success' : 'text-danger'">
-                {{conta.saldoAtual | currency: 'BRL'}}
+              <h3 class="font-weight-medium text-success mb-0" [ngClass]="(conta.saldo > 0) ? 'text-success' : 'text-danger'">
+                {{conta.saldo | currency: 'BRL'}}
               </h3>
             </div>
           </div>
