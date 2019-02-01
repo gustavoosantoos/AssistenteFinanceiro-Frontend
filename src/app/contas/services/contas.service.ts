@@ -23,4 +23,8 @@ export class ContasService {
   public cadastrarConta(conta: CadastrarConta): Observable<any> {
     return this.http.post(this.serviceUrl, conta);
   }
+
+  public removerConta(codigo: string): Observable<any> {
+    return this.http.delete(this.serviceUrl + '/' + codigo);
+  }
 }

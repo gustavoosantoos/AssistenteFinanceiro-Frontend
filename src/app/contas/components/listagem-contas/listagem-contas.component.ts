@@ -18,6 +18,10 @@ export class ListagemContasComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.obterContas();
+  }
+
+  obterContas() {
     this.service.obterContas().subscribe(r => {
       this.contas = r;
     });
@@ -25,5 +29,11 @@ export class ListagemContasComponent implements OnInit {
 
   criarConta() {
     this.router.navigate(['contas/nova']);
+  }
+
+  removerConta(codigo: string) {
+    this.service.removerConta(codigo).subscribe(r => {
+      this.obterContas();
+    });
   }
 }
