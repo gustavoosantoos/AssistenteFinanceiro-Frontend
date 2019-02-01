@@ -37,6 +37,16 @@ export class FormContasComponent implements OnInit {
     }
   }
 
+  obterConta(codigo: string) {
+    this.service.obterConta(this.codigoConta).subscribe(c => {
+      this.f['codigo'].setValue(c.codigo);
+      this.f['nomeConta'].setValue(c.nome);
+      this.f['nomeIcone'].setValue(c.icone);
+      this.f['corIcone'].setValue(c.cor);
+      this.f['saldoInicial'].disable();
+    });
+  }
+
   salvarConta() {
     if (this.f['codigo'].value != null) {
       this.atualizarConta();
@@ -47,17 +57,16 @@ export class FormContasComponent implements OnInit {
   }
 
   atualizarConta() {
+    if (!this.isValidForm()) {
+      return;
+    }
+
 
   }
 
   cadastrarNovaConta() {
-    this.submitted = true;
-
-    for (let fieldName in this.registerForm.controls) {
-      let control = this.registerForm.controls[fieldName];
-      if (control.invalid) {
-        return;
-      }
+    if (!this.isValidForm()) {
+      return;
     }
 
     let { nomeConta, saldoInicial, nomeIcone, corIcone } = this.registerForm.value;
@@ -68,11 +77,18 @@ export class FormContasComponent implements OnInit {
     });
   }
 
-  obterConta(codigo: string) {
-    this.service.obterConta(codigo).subscribe(c => {
-
-    });
-  }
-
   get f() { return this.registerForm.controls; }
+
+  private isValidForm(): boolean {
+    this.submitted = true;
+
+    for (let fieldName in this.registerForm.controls) {
+      let control = this.registerForm.controls[fieldName];
+      if (control.invalid) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 }
