@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'contas', component: ListagemContasComponent },
   { path: 'contas/nova', component: FormContasComponent },
+  { path: 'contas/:codigo', component: FormContasComponent },
   { path: 'transacoes', component: ListagemTransacoesComponent },
   { path: 'objetivos', component: ListagemObjetivosComponent },
   { path: 'acoes', component: ListagemAcoesComponent },

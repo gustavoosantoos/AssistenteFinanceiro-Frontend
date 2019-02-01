@@ -28,7 +28,11 @@ export class ListagemContasComponent implements OnInit {
   }
 
   criarConta() {
-    this.router.navigate(['contas/nova']);
+    this.router.navigate(['contas', 'nova']);
+  }
+
+  editarConta(codigo: string) {
+    this.router.navigate(['contas', codigo]);
   }
 
   removerConta(codigo: string) {

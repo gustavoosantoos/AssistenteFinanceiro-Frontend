@@ -16,6 +16,10 @@ export class ContasService {
     private http: HttpClient
   ) { }
 
+  public obterConta(codigo: string): Observable<Conta> {
+    return this.http.get<Conta>(this.serviceUrl + '/' + codigo);
+  }
+
   public obterContas(): Observable<Array<Conta>> {
     return this.http.get<Array<Conta>>(this.serviceUrl);
   }
