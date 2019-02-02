@@ -33,7 +33,7 @@ export class FormContasComponent implements OnInit {
 
     this.codigoConta = this.activatedRoute.snapshot.params['codigo'];
     if (this.codigoConta != null) {
-
+      this.obterConta(this.codigoConta);
     }
   }
 
