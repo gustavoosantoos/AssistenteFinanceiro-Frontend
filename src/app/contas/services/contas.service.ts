@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { AtualizarConta } from '../models/atualizar-conta.model';
 import { CadastrarConta } from '../models/cadastrar-conta.model';
 import { Conta } from '../models/conta.model';
 
@@ -22,6 +23,10 @@ export class ContasService {
 
   public obterContas(): Observable<Array<Conta>> {
     return this.http.get<Array<Conta>>(this.serviceUrl);
+  }
+
+  public atualizarConta(conta: AtualizarConta): Observable<any> {
+    return this.http.put(this.serviceUrl + '/' + conta.codigo, conta);
   }
 
   public cadastrarConta(conta: CadastrarConta): Observable<any> {

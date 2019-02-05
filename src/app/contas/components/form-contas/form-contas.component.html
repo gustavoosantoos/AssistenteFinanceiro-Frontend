@@ -1,6 +1,6 @@
 <app-page-header [title]="'Nova Conta'" [icon]="'mdi-plus'"></app-page-header>
 
-<form [formGroup]="registerForm" (ngSubmit)="cadastrarNovaConta()">
+<form [formGroup]="registerForm" (ngSubmit)="salvarConta()">
   <div class="row">
     <div class="col-xl-12">
       <div class="card">
@@ -48,7 +48,7 @@
         </div>
         <div class="card-footer text-right">
           <button class="btn btn-light mr-3" (click)="cancelar()" type="button">Cancelar</button>
-          <button class="btn btn-primary">Cadastrar</button>
+          <button class="btn btn-primary">{{this.codigoConta == null ? 'Cadastrar' : 'Atualizar'}}</button>
         </div>
       </div>
     </div>

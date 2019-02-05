@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AtualizarConta } from '../../models/atualizar-conta.model';
 import { CadastrarConta } from '../../models/cadastrar-conta.model';
 import { ContasService } from '../../services/contas.service';
 
@@ -61,7 +62,12 @@ export class FormContasComponent implements OnInit {
       return;
     }
 
+    let {codigo, nomeConta, nomeIcone, corIcone } = this.registerForm.value;
+    let conta = new AtualizarConta(codigo, nomeConta, nomeIcone, corIcone);
 
+    this.service.atualizarConta(conta).subscribe(() => {
+      this.router.navigate(['/contas']);
+    });
   }
 
   cadastrarNovaConta() {
