@@ -77,6 +77,10 @@ export class FormContasComponent implements OnInit {
     });
   }
 
+  cancelar() {
+    this.router.navigate(['/contas']);
+  }
+
   get f() { return this.registerForm.controls; }
 
   private isValidForm(): boolean {
