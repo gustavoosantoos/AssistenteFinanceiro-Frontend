@@ -14,7 +14,7 @@ export class FormContasComponent implements OnInit {
 
   public registerForm: FormGroup;
   public submitted: Boolean = false;
-  private codigoConta: string;
+  public codigoConta: string;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -33,7 +33,7 @@ export class FormContasComponent implements OnInit {
     });
 
     this.codigoConta = this.activatedRoute.snapshot.params['codigo'];
-    if (this.codigoConta != null) {
+    if (this.codigoConta != null && this.codigoConta !== '') {
       this.obterConta(this.codigoConta);
     }
   }
@@ -49,7 +49,7 @@ export class FormContasComponent implements OnInit {
   }
 
   salvarConta() {
-    if (this.f['codigo'].value != null) {
+    if (this.codigoConta != null && this.codigoConta !== '') {
       this.atualizarConta();
       return;
     }
