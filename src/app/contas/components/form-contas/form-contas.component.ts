@@ -32,10 +32,13 @@ export class FormContasComponent implements OnInit {
       corIcone: ['', Validators.required]
     });
 
-    this.codigoConta = this.activatedRoute.snapshot.params['codigo'];
-    if (this.codigoConta != null && this.codigoConta !== '') {
-      this.obterConta(this.codigoConta);
-    }
+    this.activatedRoute.params.subscribe(p => {
+      this.codigoConta = p['codigo'];
+      if (this.codigoConta != null && this.codigoConta !== '') {
+        this.obterConta(this.codigoConta);
+      }
+    });
+
   }
 
   obterConta(codigo: string) {
@@ -62,7 +65,7 @@ export class FormContasComponent implements OnInit {
       return;
     }
 
-    let {codigo, nomeConta, nomeIcone, corIcone } = this.registerForm.value;
+    let { codigo, nomeConta, nomeIcone, corIcone } = this.registerForm.value;
     let conta = new AtualizarConta(codigo, nomeConta, nomeIcone, corIcone);
 
     this.service.atualizarConta(conta).subscribe(() => {
