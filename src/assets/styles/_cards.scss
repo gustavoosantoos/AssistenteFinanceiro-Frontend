@@ -2,8 +2,7 @@
 
 .card {
   border: 1px solid #e0dddd;
-  @include border-radius(2px);
-  
+  @include border-radius(20px);
   
   .card-body {
     padding: $card-padding-y $card-padding-x;
@@ -14,6 +13,8 @@
 
   .card-header {
     padding: 0.6rem 1.25rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 
     span {
       display: inline-block;
