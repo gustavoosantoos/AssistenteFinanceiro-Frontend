@@ -1,0 +1,16 @@
+.mes-atual-container {
+    width: fit-content;
+    margin: 0 auto;
+
+    .btn-previous-month {
+        padding: 6px;
+        border: none;
+        margin-right: 10px;
+    }
+
+    .btn-next-month {
+        padding: 6px;
+        border: none;
+        margin-left: 10px;
+    }
+}
