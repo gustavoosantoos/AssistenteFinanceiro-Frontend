@@ -14,3 +14,20 @@
         margin-left: 10px;
     }
 }
+
+.card {
+  text-align: center;
+
+
+  .card-header {
+    padding: 0.4rem 1rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+.card-stats {
+  margin-bottom: 10px;
+}
