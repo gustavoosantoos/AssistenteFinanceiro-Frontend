@@ -12,4 +12,11 @@
 
 .header-right {
     margin-left: auto;
+    padding-right: 15px;
+    padding-top: 1px;
+
+    .btn {
+        border: none;
+        height: 100%;
+    }
 }
