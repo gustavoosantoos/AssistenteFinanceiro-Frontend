@@ -18,6 +18,26 @@
 .card {
   text-align: center;
 
+  &.card-primary {
+    .card-header {
+      background-color: #a90329;
+      color: white;
+    }
+  }
+
+  &.card-success {
+    .card-header {
+      background-color: #2b8232;
+      color: white;
+    }
+  }
+
+  &.card-danger {
+    .card-header {
+      background-color: #d20c1e;
+      color: white;
+    }
+  }
 
   .card-header {
     padding: 0.4rem 1rem;
