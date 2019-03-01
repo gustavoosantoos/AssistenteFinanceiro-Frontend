@@ -12,4 +12,7 @@ export class ListagemTransacoesComponent implements OnInit {
   ngOnInit() {
   }
 
+  criarTransacao() {
+    // TODO - Adicionar tela de criação de transações, tela ou modal?
+  }
 }
