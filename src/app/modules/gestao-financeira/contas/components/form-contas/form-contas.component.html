@@ -1,0 +1,56 @@
+<app-page-header [title]="'Nova Conta'" [icon]="'mdi-plus'"></app-page-header>
+
+<form [formGroup]="registerForm" (ngSubmit)="salvarConta()">
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Cadastrar nova conta</h4>
+          <input type="hidden" formControlName="codigo">
+          <div class="row">
+            <div class="col-xl-3 col-sm-6">
+              <div class="form-group">
+                <label for="nomeConta">Nome da conta</label>
+                <input type="text" class="form-control" id="nomeConta" formControlName="nomeConta" [ngClass]="{ 'is-invalid': submitted && f['nomeConta'].errors }">
+                <div *ngIf="submitted && f['nomeConta'].errors" class="invalid-feedback">
+                    <div *ngIf="f['nomeConta'].errors.required">Nome da conta é obrigatório</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <div class="form-group">
+                <label for="saldoInicial">Saldo inicial</label>
+                <input type="text" class="form-control" id="saldoInicial" formControlName="saldoInicial" [ngClass]="{ 'is-invalid': submitted && f['saldoInicial'].errors }">
+                <div *ngIf="submitted && f['saldoInicial'].errors" class="invalid-feedback">
+                    <div *ngIf="f['saldoInicial'].errors.required">Saldo inicial da conta é obrigatório</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <div class="form-group">
+                <label for="nomeIcone">Icone da conta</label>
+                <input type="text" class="form-control" id="nomeIcone" formControlName="nomeIcone" [ngClass]="{ 'is-invalid': submitted && f['nomeIcone'].errors }">
+                <div *ngIf="submitted && f['nomeIcone'].errors" class="invalid-feedback">
+                    <div *ngIf="f['nomeIcone'].errors.required">Nome do ícone é obrigatório</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+              <div class="form-group">
+                <label for="corIcone">Cor do icone</label>
+                <input type="color" class="form-control" id="corIcone" formControlName="corIcone" [ngClass]="{ 'is-invalid': submitted && f['corIcone'].errors }">
+                <div *ngIf="submitted && f['corIcone'].errors" class="invalid-feedback">
+                    <div *ngIf="f['corIcone'].errors.required">Cor do ícone é obrigatória</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-right">
+          <button class="btn btn-light mr-3" (click)="cancelar()" type="button">Cancelar</button>
+          <button class="btn btn-primary">{{this.codigoConta == null ? 'Cadastrar' : 'Atualizar'}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

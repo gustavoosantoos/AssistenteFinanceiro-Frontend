@@ -1,0 +1,22 @@
+.conta-name {
+    font-size: 1.2rem;
+    display: inline-block;
+    height: 100%;
+    vertical-align: -webkit-baseline-middle;
+    margin-left: 10px;
+}
+
+.header-left {
+    padding-left: 15px;
+}
+
+.header-right {
+    margin-left: auto;
+    padding-right: 15px;
+    padding-top: 1px;
+
+    .btn {
+        border: none;
+        height: 100%;
+    }
+}
