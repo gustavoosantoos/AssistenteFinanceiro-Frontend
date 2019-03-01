@@ -4,22 +4,20 @@ import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ListagemAcoesComponent } from './acoes/listagem-acoes/listagem-acoes.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ListagemCadastrosComponent } from './cadastros/listagem-cadastros/listagem-cadastros.component';
-import { FormContasComponent } from './contas/components/form-contas/form-contas.component';
-import { ListagemContasComponent } from './contas/components/listagem-contas/listagem-contas.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { FabComponent } from './layout/fab/fab.component';
-import { FooterComponent } from './layout/footer/footer.component';
-import { NavbarComponent } from './layout/navbar/navbar.component';
-import { PageHeaderComponent } from './layout/page-header/page-header.component';
-import { SidebarComponent } from './layout/sidebar/sidebar.component';
-import { ListagemObjetivosComponent } from './objetivos/listagem-objetivos/listagem-objetivos.component';
-import { ListagemTransacoesComponent } from './transacoes/listagem-transacoes/listagem-transacoes.component';
-
-
+import { FooterComponent } from './core/components/footer/footer.component';
+import { NavbarComponent } from './core/components/navbar/navbar.component';
+import { SidebarComponent } from './core/components/sidebar/sidebar.component';
+import { ListagemAcoesComponent } from './modules/acoes/listagem-acoes/listagem-acoes.component';
+import { ListagemCadastrosComponent } from './modules/cadastros/listagem-cadastros/listagem-cadastros.component';
+import { FormContasComponent } from './modules/contas/components/form-contas/form-contas.component';
+import { ListagemContasComponent } from './modules/contas/components/listagem-contas/listagem-contas.component';
+import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { ListagemObjetivosComponent } from './modules/objetivos/listagem-objetivos/listagem-objetivos.component';
+import { ListagemTransacoesComponent } from './modules/transacoes/listagem-transacoes/listagem-transacoes.component';
+import { FabComponent } from './shared/components/fab/fab.component';
+import { PageHeaderComponent } from './shared/components/page-header/page-header.component';
 
 @NgModule({
   declarations: [
