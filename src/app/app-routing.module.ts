@@ -1,24 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListagemAcoesComponent } from './modules/acoes/listagem-acoes/listagem-acoes.component';
-import { ListagemCadastrosComponent } from './modules/cadastros/listagem-cadastros/listagem-cadastros.component';
-import { FormContasComponent } from './modules/contas/components/form-contas/form-contas.component';
-import { ListagemContasComponent } from './modules/contas/components/listagem-contas/listagem-contas.component';
-import { DashboardComponent } from './modules/dashboard/dashboard.component';
-import { ListagemObjetivosComponent } from './modules/objetivos/listagem-objetivos/listagem-objetivos.component';
-import { ListagemTransacoesComponent } from './modules/transacoes/listagem-transacoes/listagem-transacoes.component';
-
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'contas', component: ListagemContasComponent },
-  { path: 'contas/nova', component: FormContasComponent },
-  { path: 'contas/:codigo', component: FormContasComponent },
-  { path: 'transacoes', component: ListagemTransacoesComponent },
-  { path: 'objetivos', component: ListagemObjetivosComponent },
-  { path: 'acoes', component: ListagemAcoesComponent },
-  { path: 'cadastros', component: ListagemCadastrosComponent }
+  { path: '', redirectTo: '/gestao/dashboard', pathMatch: 'full' },
+  { path: 'gestao', loadChildren: './modules/gestao-financeira/gestao-financeira.module#GestaoFinanceiraModule' }
 ];
 
 @NgModule({

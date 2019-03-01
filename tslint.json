@@ -14,7 +14,6 @@
     "deprecation": {
       "severity": "warn"
     },
-    "eofline": true,
     "import-blacklist": [
       true,
       "rxjs/Rx"
@@ -85,8 +84,7 @@
       "always"
     ],
     "triple-equals": [
-      true,
-      "allow-null-check"
+      false
     ],
     "typedef-whitespace": [
       true,
