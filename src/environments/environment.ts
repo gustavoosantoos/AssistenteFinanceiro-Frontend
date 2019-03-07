@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  baseServerUrl: 'http://rhitta.azurewebsites.net/api'
+  baseServerUrl: 'https://rhitta.azurewebsites.net/api'
 };

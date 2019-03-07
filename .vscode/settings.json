@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d18006ff-a5d4-4672-983c-fab83e129b43/resourceGroups/rhitta/providers/Microsoft.Web/sites/rhitta-web",
+    "appService.deploySubpath": "dist\\star-admin-angular"
+}
